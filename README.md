@@ -141,6 +141,29 @@ pip install autodistill-yolov8 autodistill-detic roboflow
 
 ```
 
+## 4.3 模型蒸馏
+
+核心代码如下， 详细代码查看fast-autodistll.ipynb
+```
+# 基础模型 & 自动标注
+base_model.label(dataset.location + "/train/images", extension=".jpg")
+
+# 目标模型
+target_model = YOLOv8("yolov8n.pt")
+
+# 模型训练
+target_model.train(dataset.location + "/train/images_labeled/data.yaml", epochs=100)
+
+```
+confusion matrix
+![alt text](images/image-5.png)
+
+训练结果
+![alt text](images/image-6.png)
+![alt text](images/image-7.png)
 
 
-# 大模型微调（少量样本） + 模型蒸馏
+
+
+
+
