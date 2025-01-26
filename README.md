@@ -28,7 +28,7 @@ pip install ultralytics
 git clone https://github.com/lizhogn/tiny_coco_dataset
 ```
 
-修改yolo_object_detection.py中image_dir为你本地的tiny-coco目录
+修改yolo_object_detection.py中image_dir为本地的tiny-coco目录
 
 ```
 python yolo_object_detection.py
@@ -36,7 +36,7 @@ python yolo_object_detection.py
 ![alt text](images/image.png)
 
 # 2 模型微调+检测
-yolo在tiny-coco上检测效果好是因为coco是yolo的训练集之一, 假如你要在自己的数据集上使用yolo，就需要进行重新训练或微调(fine-tuning).
+yolo在tiny-coco上检测效果好是因为coco是yolo的训练集之一, 假如要在自己的数据集上使用yolo，就需要进行重新训练或微调(fine-tuning).
 
 下载plane_detection dataset以yolov8格式保存, https://universe.roboflow.com/my-projects-ons8w/air-plane-detection/dataset/3
 修改yolo_object_detection.py中image_dir对新数据集进行检测，大部分无法检出, 部分检测的类别也是错的。
@@ -94,7 +94,7 @@ pip install labelImg
  
 ## 3.3 标注格式 
  
-根据你要训练的模型选择合适的标注格式。常见格式包括： 
+根据需要训练的模型选择合适的标注格式。常见格式包括： 
  
 - **YOLO 格式**：每个图像对应一个  .txt  文件，文件中每行表示一个物体，格式为  <class_id> <x_center> <y_center> <width> <height> 。 
 - **Pascal VOC 格式**：以 XML 文件存储，每个图像对应一个 XML 文件。 
@@ -106,7 +106,7 @@ pip install labelImg
 - **标注质量**：确保标注的精确性和完整性，以提高模型的训练效果。 
 - **数据备份**：定期备份标注数据，以防丢失。 
  
-通过这些步骤，你可以创建一个高质量的目标检测数据集，为训练模型提供良好的基础。
+通过这些步骤，可以创建一个高质量的目标检测数据集，为训练模型提供良好的基础。
 
 
 
