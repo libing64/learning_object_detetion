@@ -19,7 +19,7 @@
 
 ## 安装
 ```
-conda activate -n yolo python=3.11 -y
+conda create -n yolo python=3.11 -y
 conda activate yolo
 pip install ultralytics
 ```
