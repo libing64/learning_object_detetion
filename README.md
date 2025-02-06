@@ -135,7 +135,7 @@ https://github.com/autodistill/autodistill
 
 ## 4.2 安装
 ```
-conda creat -n autodistill python=3.10 -y
+conda create -n autodistill python=3.10 -y
 conda activate autodistill
 pip install autodistill-yolov8 autodistill-detic roboflow
 
